@@ -173,8 +173,46 @@
 <div id="step-3データを解析しよう" class="section level3">
 <h3><a href="R_training_2021_4.html">Step 3：データを解析しよう！</a></h3>
 <ul>
-<li>dplyrでデータを解析しよう</li>
-<li>tidyrでデータを使える形に変形しよう</li>
+<li>dplyrでデータを解析しよう
+<ul>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#7">head()</a> データをざっくり眺める</li>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#8">str()</a> データの変数をリストアップする</li>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#9">select()</a> 指定した列を抽出する
+<ul>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#11">select(starts_with())</a> 部分一致</li>
+</ul></li>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#15">filter()</a> 特定の値の行を抽出する
+<ul>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#16">filter(【列名】 %in% c(【値1】, 【値2】))</a> 複数の値</li>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#17">filter(【列名】 &gt; 【値】)</a> 比較演算子</li>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#22">filter(【列名A】 &gt; 【値】, 【列名B】 &gt; 【値】)</a> 複数条件（AND）</li>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#22">filter(【列名A】 &gt; 【値】| 【列名B】 &gt; 【値】)</a> 複数条件（OR）</li>
+</ul></li>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#32">mutate()</a> 新しい列を作る／既存の列の値を変更する
+<ul>
+<li><a href="file:///Users/ishikawayuki/Dropbox/R_training_2021/R_training_2021_4.html#34">mutate(if_else()), mutate(case_when)</a> 条件に応じた値</li>
+</ul></li>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#37">summarize()</a> 数値を要約する
+<ul>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#39">group_by()</a> 特定のグループに分けて要約する</li>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#42">across()</a> 複数条件の要約を短く</li>
+</ul></li>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#50">bind_cols, bind_rows</a> 複数のデータフレームを結合する</li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li>tidyrでデータを使える形に変形しよう
+<ul>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#54">pivot_wider()</a> 縦長のデータを横広に</li>
+<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#55">pivot_longer()</a> 横広のデータを縦長に</li>
+<li></li>
+</ul></li>
+<li>ggplot2の実例
+<ul>
+<li><a href="R_training_2021_4.html#46">棒グラフ±エラーバー</a></li>
+<li></li>
+</ul></li>
 </ul>
 </div>
 <div id="step-4自分のデータを扱おう" class="section level3">
