@@ -154,20 +154,43 @@
 <div id="step-1rの基本をマスターしよう" class="section level3">
 <h3><a href="R_training_2021_2.html">Step 1：Rの基本をマスターしよう！</a></h3>
 <ul>
-<li>データ解析の重要性について</li>
-<li>Rの基本</li>
-<li>変数を扱おう</li>
-<li>データ型（class）を扱おう</li>
-<li>ベクトル（vector）を扱おう</li>
-<li>データフレーム（data.frame）を扱おう</li>
-<li>パッケージを使おう</li>
+<li><a href="/R_training_2021_2.html#2">データ解析の重要性について</a></li>
+<li><a href="R_training_2021_2.html#14">Rと接する上での心構え</a></li>
+<li><a href="R_training_2021_2.html#16">この実習の取り組み方</a></li>
+<li><a href="R_training_2021_2.html#18">Rの使い方</a></li>
+<li><a href="R_training_2021_2.html#28">変数を扱おう</a></li>
+<li><a href="R_training_2021_2.html#35">データ型（class）を扱おう</a></li>
+<li><a href="R_training_2021_2.html#39">ベクトル（vector）を扱おう</a></li>
+<li><a href="R_training_2021_2.html#44">データフレーム（data.frame）を扱おう</a></li>
+<li><a href="R_training_2021_2.html#54">パッケージを使おう</a></li>
 </ul>
 </div>
 <div id="step-2データを可視化しよう" class="section level3">
 <h3><a href="R_training_2021_3.html">Step 2：データを可視化しよう！</a></h3>
 <ul>
-<li>データ可視化の重要性</li>
-<li>ggplot2でデータを眺めよう</li>
+<li><a href="R_training_2021_3.html#3">データ可視化の重要性</a> <br><br />
+</li>
+<li>ggplot2でデータを眺めよう
+<ul>
+<li><a href="R_training_2021_3.html#9">geom_histogram</a> ヒストグラム</li>
+<li><a href="R_training_2021_3.html#16">geom_density</a> 密度分布</li>
+<li><a href="R_training_2021_3.html#20">geom_point</a> 散布図
+<ul>
+<li><a href="R_training_2021_3.html#21">aes(color)</a> 色を表現する</li>
+<li><a href="R_training_2021_3.html#25">facet_wrap, facet_grid</a> グラフを分ける</li>
+</ul></li>
+<li><a href="R_training_2021_3.html#32">geom_boxplot</a> 箱ヒゲ
+<ul>
+<li><a href="R_training_2021_3.html#33">theme_***</a> 全体の雰囲気を変える</li>
+<li><a href="R_training_2021_3.html#35">color（aesの外）</a> 線を特定の色にする</li>
+<li><a href="R_training_2021_3.html#36">fill（aesの外）</a> 特定の色で塗りつぶす</li>
+<li><a href="R_training_2021_3.html#37">color（aesの中）</a> 線を値に応じた色にする</li>
+</ul></li>
+<li><a href="R_training_2021_3.html#38">coord_cartesian</a> 軸の範囲を変える</li>
+<li><a href="R_training_2021_3.html#38">labs</a> タイトルや軸ラベルを書く／書き換える</li>
+<li><a href="R_training_2021_3.html#39">theme</a> 文字の大きさなどを細かく設定</li>
+<li><a href="R_training_2021_3.html#41">ggsave()</a> 図をファイルとして保存</li>
+</ul></li>
 </ul>
 </div>
 <div id="step-3データを解析しよう" class="section level3">
@@ -175,51 +198,59 @@
 <ul>
 <li>dplyrでデータを解析しよう
 <ul>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#7">head()</a> データをざっくり眺める</li>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#8">str()</a> データの変数をリストアップする</li>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#9">select()</a> 指定した列を抽出する
+<li><a href="R_training_2021_4.html#7">head()</a> データをざっくり眺める</li>
+<li><a href="R_training_2021_4.html#8">str()</a> データの変数をリストアップする</li>
+<li><a href="R_training_2021_4.html#9">select()</a> 指定した列を抽出する
 <ul>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#11">select(starts_with())</a> 部分一致</li>
+<li><a href="R_training_2021_4.html#11">select(starts_with())</a> 部分一致</li>
 </ul></li>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#15">filter()</a> 特定の値の行を抽出する
+<li><a href="R_training_2021_4.html#15">filter()</a> 特定の値の行を抽出する
 <ul>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#16">filter(【列名】 %in% c(【値1】, 【値2】))</a> 複数の値</li>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#17">filter(【列名】 &gt; 【値】)</a> 比較演算子</li>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#22">filter(【列名A】 &gt; 【値】, 【列名B】 &gt; 【値】)</a> 複数条件（AND）</li>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#22">filter(【列名A】 &gt; 【値】| 【列名B】 &gt; 【値】)</a> 複数条件（OR）</li>
+<li><a href="R_training_2021_4.html#16">filter(【列名】 %in% c(【値1】, 【値2】))</a> 複数の値</li>
+<li><a href="R_training_2021_4.html#17">filter(【列名】 &gt; 【値】)</a> 比較演算子</li>
+<li><a href="R_training_2021_4.html#22">filter(【列名A】 &gt; 【値】, 【列名B】 &gt; 【値】)</a> 複数条件（AND）</li>
+<li><a href="R_training_2021_4.html#22">filter(【列名A】 &gt; 【値】| 【列名B】 &gt; 【値】)</a> 複数条件（OR）</li>
 </ul></li>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#32">mutate()</a> 新しい列を作る／既存の列の値を変更する
+<li><a href="R_training_2021_4.html#32">mutate()</a> 新しい列を作る／既存の列の値を変更する
 <ul>
-<li><a href="file:///Users/ishikawayuki/Dropbox/R_training_2021/R_training_2021_4.html#34">mutate(if_else()), mutate(case_when)</a> 条件に応じた値</li>
+<li><a href="R_training_2021_4.html#34">mutate(if_else()), mutate(case_when)</a> 条件に応じた値</li>
 </ul></li>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#37">summarize()</a> 数値を要約する
+<li><a href="R_training_2021_4.html#37">summarize()</a> 数値を要約する
 <ul>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#39">group_by()</a> 特定のグループに分けて要約する</li>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#42">across()</a> 複数条件の要約を短く</li>
+<li><a href="R_training_2021_4.html#39">group_by()</a> 特定のグループに分けて要約する</li>
+<li><a href="R_training_2021_4.html#42">across()</a> 複数条件の要約を短く</li>
 </ul></li>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#50">bind_cols, bind_rows</a> 複数のデータフレームを結合する</li>
-</ul></li>
-</ul>
-<p><br></p>
+<li><a href="R_training_2021_4.html#50">bind_cols, bind_rows</a> 複数のデータフレームを結合する</li>
+<li>その他便利な関数を探したい方は
 <ul>
+<li><a href="https://heavywatal.github.io/rstats/dplyr.html">Heavy Watalさんの解説</a></li>
+<li>など <br><br />
+</li>
+</ul></li>
+</ul></li>
 <li>tidyrでデータを使える形に変形しよう
 <ul>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#54">pivot_wider()</a> 縦長のデータを横広に</li>
-<li><a href="https://comicalcommet.github.io/r-training-2021/R_training_2021_4.html#55">pivot_longer()</a> 横広のデータを縦長に</li>
-<li></li>
+<li><a href="R_training_2021_4.html#54">pivot_wider()</a> 縦長のデータを横広に</li>
+<li><a href="R_training_2021_4.html#55">pivot_longer()</a> 横広のデータを縦長に</li>
+<li><a href="R_training_2021_4.html#62">separate()</a> 文字列カラムを複数に分割</li>
+<li><a href="R_training_2021_4.html#64">unite()</a> 複数の文字列カラムを結合 <br><br />
+</li>
 </ul></li>
 <li>ggplot2の実例
 <ul>
 <li><a href="R_training_2021_4.html#46">棒グラフ±エラーバー</a></li>
-<li></li>
 </ul></li>
 </ul>
 </div>
 <div id="step-4自分のデータを扱おう" class="section level3">
 <h3><a href="R_training_2021_5.html">Step 4：自分のデータを扱おう！</a></h3>
 <ul>
-<li>整然（tidy）データとは何か</li>
-<li>readrで自分のデータを読み込もう</li>
+<li><a href="R_training_2021_5.html#4">整然（tidy）データとは何か</a></li>
+<li>readrで自分のデータを読み込もう
+<ul>
+<li><a href="R_training_2021_5.html#24">read_csv()</a> CSVファイルの読み込み</li>
+<li><a href="R_training_2021_5.html#27">write_csv()</a> CSVファイルの書き出し</li>
+</ul></li>
 </ul>
 </div>
 <div id="step-5統計解析をしよう" class="section level3">
